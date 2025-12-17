@@ -1,0 +1,1432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --latte: #DDA15E;
+    --latte-escuro: #BC6C25;
+    --café: #C08552;
+    --café-escuro: #895737;
+    --expresso: #432818;
+    --expresso-ralo: #99582A;
+    --vinho-dark: #3a0b14;
+    --vinho-escuro: #44001A;
+    --vinho: #6F1D1B;
+    --bege-claro: #FEFAE0;
+    --creme: #FFE6A7;
+    --fonte-site: "Aboreto", system-ui;
+    --fonte-texto: "Geologica", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    background-color: #fff;
+    color: var(--expresso);
+}
+
+#container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#topo {
+    background-color: var(--vinho-dark);
+    color: var(--bege-claro);
+    padding: 20px 0;
+}
+
+.grid-topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menutopo ul {
+    display: flex;
+    gap: 250px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#menutopo a {
+    font-size: 1.1rem;
+    color: var(--creme);
+    text-decoration: none;
+    font-family: var(--fonte-site);
+}
+
+#menutopo a:hover {
+    color: var(--latte);
+}
+
+#inicio {
+    background-color: var(--café);
+    position: relative;
+    padding: 80px 20px 100px 20px;
+    text-align: center;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-area {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    z-index: 20;
+}
+
+#logo-inicio {
+    width: 130px;
+    height: auto;
+}
+
+.slogan {
+    z-index: 20;
+    position: relative;
+}
+
+.slogan h2 {
+    color: var(--vinho-dark);
+    font-family: var(--fonte-site);
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
+.slogan span {
+    color:var(--bege-claro);
+}
+
+#SM {
+    position: relative;
+    right: 200px;
+}
+
+.elementos-flutuantes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.graos-inicio {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 500px;
+}
+
+.graos2 {
+    position: relative;
+    left: 600px;
+    bottom: 100px;
+    width: 500px;
+    z-index: 2;
+}
+
+.cafetopo {
+    position: relative;
+    left: 600px;
+    width: 500px;
+    z-index: 1;
+}
+
+#beneficios {
+    background-color: var(--vinho-escuro);
+    color: var(--bege-claro);
+    padding: 60px 20px;
+}
+
+.icones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icones article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.icones h4 {
+    font-family: var(--fonte-texto);
+    font-weight: 300px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--creme);
+}
+
+#espacodocafe {
+    background-color: var(--vinho-dark);
+    text-align: center;
+}
+
+#cafeespaco {
+    width: 100%;
+    max-width: 1520px;
+    height: auto;
+}
+
+#corte {
+    background-color: var(--café);
+    color: var(--bege-claro);
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textocorte {
+    background-color: var(--café-escuro);
+    font-size: 1.4rem;
+    font-family: var(--fonte-site);
+    padding: 8px 80px;
+    border-radius: 50px;
+}
+
+#pedido {
+    background-color: var(--vinho-dark);
+    color: var(--bege-claro);
+    font-family: var(--fonte-site);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#produtos {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-end; 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+}
+
+#produtos article {
+    width: 20%; 
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: 15px;
+}
+
+#produtos article h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: var(--fonte-site);
+    color: var(--creme);
+}
+
+#produtos img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#top {
+    font-family: var(--fonte-site);
+    font-size: 2.5rem;
+    color: var(--creme);
+    margin-bottom: 5px;
+}
+
+#top2 {
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    color: var(--creme);
+    margin-bottom: 50px;
+}
+
+.botao {
+    background-color: transparent; 
+    color: var(--creme); 
+    border: 1px solid var(--creme);
+    font-size: 0.9rem; 
+    padding: 10px 25px; 
+    border-radius: 0; 
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--fonte-site); 
+}
+
+.botao:hover {
+    background-color: var(--creme);
+    color: var(--vinho-dark);
+    border-color: var(--creme);
+}
+
+#quemsomos {
+    background-color: var(--bege-claro);
+    color: var(--expresso);
+    padding: 80px 20px;
+}
+
+.quem-somos-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cafecomafeto {
+    font-family: var(--fonte-site);
+    font-size: 2.5rem;
+    color: var(--expresso);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#paragrafo {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#botaomarrom {
+    background-color: var(--expresso);
+    color: var(--bege-claro);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+    position: relative;
+    left: 172px;
+}
+
+#botaomarrom:hover {
+    background-color: var(--expresso-ralo);
+}
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#fotos > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fotos-inferiores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.fotos-inferiores img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#fotos img {
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cafecomafeto {
+    font-family: var(--fonte-site);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#nossacafeteria {
+    background-color: var(--expresso-ralo);
+    color: var(--bege-claro);
+    padding: 60px 20px;
+}
+
+.nossa-cafeteria-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nossacaf {
+    font-family: var(--fonte-site);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    right: 700px;
+}
+
+.cafe-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.cafe-foto-principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    position: relative;
+    top: 20px;
+}
+
+.vila-da-praca {
+    margin-bottom: 40px;
+    position: relative;
+    bottom: 50px;
+}
+
+.vila-da-praca img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#iconloc {
+    width: 35px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.loc {
+    font-family: var(--fonte-site);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#reserva {
+    background-color: var(--latte-escuro);
+    font-family: var(--fonte-site);
+    padding: 60px 20px;
+    color: var(--bege-claro);
+}
+
+.form-reserva {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-reserva h3 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+}
+
+.form-reserva .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-reserva label {
+    font-size: 0.9rem;
+}
+
+.form-reserva input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte-texto);
+    background-color: rgba(255,255,255,0.9);
+}
+.form-reserva textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte-texto);
+    background-color: rgba(255,255,255,0.9);
+}
+
+.botao-form {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao-form .botao {
+    background-color: var(--expresso);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 12px 40px;
+}
+
+footer {
+    background-color: var(--vinho-dark);
+    color: var(--creme);
+    padding: 60px 20px 40px 20px;
+    position: relative;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.rede-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#redes img {
+    width: 35px;
+}
+
+#redes h4 {
+    font-size: 1.1rem;
+    font-family: var(--fonte-texto);
+    margin: 0;
+}
+
+#funcionamento-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#funcion {
+    font-family: var(--fonte-site);
+    font-size: 2.2rem;
+    color: var(--creme);
+    margin-bottom: 25px;
+}
+
+.horario {
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    font-weight: 300px;
+    margin: 0;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    max-width: 200px;
+}
+
+#cafefinal {
+    width: 100%;
+    height: auto;
+    margin-bottom: -5px;
+}
+
+.inicio-contato {
+    background-color: var(--café);
+    padding: 100px 20px;
+    min-height: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.inicio-contato h2 {
+    color: var(--vinho-dark);
+    font-family: var(--fonte-site);
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.subtitulo-contato {
+    color: var(--bege-claro);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#contato-form {
+    background-color: var(--latte-escuro);
+    padding: 60px 20px;
+}
+
+.form-geral {
+    background-color: var(--latte);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-geral h3 {
+    grid-column: 1 / -1;
+    color: var(--expresso);
+    font-family: var(--fonte-site);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    color: var(--expresso);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    padding: 10px;
+    border: 1px solid var(--café-escuro);
+    border-radius: 4px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+}
+
+.campo textarea {
+    padding: 10px;
+    border: 1px solid var(--café-escuro);
+    border-radius: 4px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+}
+
+.textarea-completo {
+    grid-column: 1 / -1;
+}
+
+.botao-form {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao-form .botao {
+    background-color: var(--expresso);
+    color: var(--bege-claro);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--fonte-site);
+}
+
+.displayNone {
+    display: none;
+}
+
+#sbcont {
+    text-align: justify;
+    width: 200px;
+}
+
+@media (max-width: 1024px) {
+    
+    .grid-topo {
+        max-width: 980px;
+    }
+
+    #menutopo ul {
+        gap: 120px;
+        padding: 5px;
+    }
+    
+    #menutopo a {
+        font-size: 1.05rem;
+    }
+
+    #inicio {
+        padding-bottom: 60px;
+    }
+
+    #logo-inicio {
+        width: 120px;
+    }
+    
+    .slogan {
+        position: relative;
+        top: 110px;
+    }
+
+    .slogan h2 {
+        font-size: 3.5rem;
+        left: 1px;
+    }
+
+    .cafetopo {
+        width: 300px;
+        position: absolute;
+    }
+
+    .graos-inicio {
+        width: 350px;
+    }
+
+    .graos2 {
+        width: 350px;
+        position: absolute;
+    }
+    
+    .logo-area {
+        left: 3%;
+    }
+
+    .icones {
+        gap: 20px;
+        max-width: 950px;
+    }
+    
+    #produtos {
+        gap: 15px;
+        max-width: 950px;
+    }
+
+    #produtos article {
+        min-width: 180px;
+    }
+
+    .quem-somos-grid {
+        gap: 30px;
+        max-width: 950px;
+    }
+
+    .nossa-cafeteria-grid {
+        gap: 25px;
+        max-width: 950px;
+    }
+    
+    #nossacaf {
+        font-size: 2.2rem;
+    }
+    
+    .form-reserva {
+        max-width: 850px;
+        gap: 30px;
+    }
+
+    .footer-grid {
+        max-width: 850px;
+    }
+    
+    #redes {
+        padding-left: 20px;
+    }
+    
+    .footer-logo {
+        display: none;
+    }
+
+    .hero-contato {
+        padding: 80px 20px;
+    }
+
+    .hero-contato h2 {
+        font-size: 3rem;
+    }
+    
+    .form-geral {
+        max-width: 700px;
+    }
+
+    #menutopo ul {
+        gap: 100px;
+    }
+
+    .slogan h2 {
+        font-size: 3.5rem;
+    }
+    
+    #SM {
+        right: 100px;
+    }
+
+    .graos-hero {
+        width: 350px;
+    }
+    
+    .graos2 {
+        left: 450px;
+        width: 400px;
+    }
+
+    .cafetopo {
+        left: 450px;
+        width: 400px;
+    }
+
+    .icones {
+        gap: 30px;
+    }
+
+    #produtos article {
+        min-width: 180px;
+    }
+    
+    .quem-somos-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 50px;
+    }
+    
+    .info-quemsomos {
+        text-align: center;
+    }
+    
+    #botaomarrom {
+        position: static;
+        margin: 20px auto 0 auto;
+        display: block;
+        width: fit-content;
+    }
+    
+    #fotos {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #fotos > img {
+        width: 45%;
+        height: 100%;
+    }
+
+    .fotos-inferiores {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 45%;
+    }
+
+    .nossa-cafeteria-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    #nossacaf {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .cafe-info {
+        text-align: center;
+    }
+    
+    .vila-da-praca {
+        margin: 20px auto;
+        max-width: 400px;
+        bottom: 0;
+    }
+    
+    .localizacao {
+        align-items: center;
+    }
+
+    .form-reserva {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 600px;
+    }
+    
+    .botao-form {
+        grid-column: 1;
+    }
+
+    .footer-grid {
+        max-width: 800px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #topo {
+        padding: 15px 0;
+    }
+
+    .grid-topo {
+        flex-direction: column;
+    }
+    
+    #menutopo ul {
+        gap: 20px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    #menutopo a {
+        font-size: 1rem;
+    }
+
+    #inicio {
+        padding: 60px 20px 80px 20px;
+        min-height: 400px;
+    }
+
+    .logo-area {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #logo-inicio {
+        width: 100px;
+    }
+
+    .slogan h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #SM {
+        position: static;
+    }
+
+    .elementos-flutuantes {
+        display: none;
+    }
+
+    .icones {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #textocorte {
+        font-size: 1.2rem;
+        padding: 8px 40px;
+    }
+
+    #produtos {
+        gap: 20px;
+    }
+    
+    #produtos article {
+        width: 45%;
+        min-width: 150px;
+    }
+
+    .quem-somos-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .info-quemsomos {
+        text-align: center;
+    }
+    
+    #botaomarrom {
+        position: static;
+        margin: 20px auto 0 auto;
+        display: block;
+        width: fit-content;
+    }
+
+    .fotos-inferiores {
+        display: none;
+    }
+
+    .nossa-cafeteria-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    #nossacaf {
+        position: static;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .cafe-info {
+        text-align: center;
+    }
+    
+    .vila-da-praca {
+        position: relative;
+        top: 1px;
+    }
+
+    .localizacao {
+        align-items: center;
+    }
+
+    .form-reserva {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .botao-form {
+        grid-column: 1;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    #redes {
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    #funcionamento-info {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        position: static;
+        margin: 20px auto 0 auto;
+        max-width: 150px;
+    }
+
+    .hero-contato {
+        padding: 60px 20px;
+        min-height: 200px;
+    }
+    
+    .hero-contato h2 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitulo-contato {
+        font-size: 1rem;
+    }
+
+    .form-geral {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        max-width: 90%;
+    }
+    
+    .textarea-completo {
+        grid-column: 1;
+    }
+    
+    .botao-form {
+        grid-column: 1;
+    }
+    #topo {
+        padding: 15px 0;
+    }
+
+    #menutopo ul {
+        gap: 50px;
+    }
+
+    .logo-area {
+        top: 10px;
+        left: 20px;
+    }
+    
+    .slogan h2 {
+        font-size: 3rem;
+    }
+    
+    #SM {
+        right: 0;
+    }
+
+    .graos-hero {
+        width: 250px;
+        top: 100px;
+        left: 20px;
+    }
+    
+    .graos2, .cafetopo {
+        left: 350px;
+        width: 300px;
+    }
+
+    #beneficios {
+        padding: 40px 10px;
+    }
+
+    .icones {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    #textocorte {
+        font-size: 1.2rem;
+        padding: 8px 50px;
+    }
+
+    #top {
+        font-size: 2rem;
+    }
+    
+    #produtos {
+        gap: 20px;
+    }
+    
+    #produtos article {
+        width: 45%;
+        min-width: 150px;
+    }
+
+    #quemsomos {
+        padding: 50px 10px;
+    }
+
+    .quem-somos-grid {
+        padding: 0 10px;
+    }
+    
+    #cafecomafeto {
+        font-size: 2rem;
+    }
+    
+    #paragrafo {
+        font-size: 1rem;
+    }
+    
+    #fotos {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #fotos > img, .fotos-inferiores {
+        width: 100%;
+    }
+    
+    .fotos-inferiores {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #nossacafeteria {
+        padding: 40px 10px;
+    }
+    
+    #nossacaf {
+        font-size: 2rem;
+    }
+    
+    #reserva {
+        padding: 40px 10px;
+    }
+
+    footer {
+        padding: 50px 10px 30px 10px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+    
+    #redes {
+        padding-left: 0;
+        align-items: center;
+    }
+    
+    #funcionamento-info {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        position: static;
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #topo {
+        padding: 10px 0;
+    }
+
+    .grid-topo {
+        flex-direction: column;
+    }
+
+    #menutopo ul {
+        gap: 10px;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menutopo a {
+        font-size: 0.9rem;
+        padding: 5px;
+        border-bottom: none;
+    }
+
+    #inicio {
+        padding: 60px 15px;
+        min-height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-area {
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #logo-inicio {
+        width: 100px;
+    }
+
+    .slogan {
+        position: static;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .slogan h2 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .elementos-flutuantes {
+        display: none;
+    }
+
+    .graos-inicio {
+        display: none;
+    }
+
+    .graos2 {
+        display: none;
+    }
+
+    .cafetopo {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    #beneficios {
+        padding: 40px 15px;
+    }
+
+    .icones {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .icones .item img {
+        width: 60px;
+    }
+
+    .icones .item p {
+        font-size: 0.9rem;
+    }
+    
+    #textocorte {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+
+    #pedido {
+        padding: 40px 15px;
+    }
+
+    #top {
+        font-size: 1.8rem;
+    }
+
+    #top2 {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    #produtos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #produtos article {
+        width: 100%;
+        min-width: unset;
+    }
+    
+    #produtos img {
+        max-width: 150px;
+    }
+
+    #quemsomos {
+        padding: 50px 15px;
+    }
+
+    #cafecomafeto {
+        font-size: 2rem;
+    }
+    
+    #nossacafeteria {
+        padding: 40px 15px;
+    }
+
+    #nossacaf {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .localizacao .loc {
+        font-size: 1rem;
+    }
+
+    #reserva {
+        padding: 50px 15px;
+    }
+
+    .form-reserva {
+        padding: 25px;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+    .botao-form .botao {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        padding: 40px 15px 30px 15px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #funcion {
+        font-size: 1.8rem;
+    }
+    
+    .horario {
+        font-size: 1.3rem;
+    }
+
+    .footer-logo {
+        max-width: 120px;
+        position: static;
+        margin: 20px auto 0 auto;
+    }
+    
+    #redes {
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    #funcionamento-info {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .quem-somos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-quemsomos {
+        text-align: center;
+    }
+    
+    #botaomarrom {
+        position: static;
+        margin: 20px auto 0 auto;
+        display: block;
+        width: fit-content;
+    }
+
+    .fotos-inferiores {
+        grid-template-columns: 1fr;
+    }
+
+    .nossa-cafeteria-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cafe-info {
+        text-align: center;
+    }
+
+    .hero-contato {
+        padding: 40px 15px;
+    }
+
+    .hero-contato h2 {
+        font-size: 2rem;
+    }
+    
+    .subtitulo-contato {
+        font-size: 0.9rem;
+    }
+
+    .form-geral {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .form-geral h3 {
+        font-size: 1.2rem;
+    }
+    
+    .campo label {
+        font-size: 0.85rem;
+    }
+
+    .campo input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .campo textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .botao-form .botao {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
